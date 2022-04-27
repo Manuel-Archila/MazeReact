@@ -1,6 +1,5 @@
-
 export default {
-  mode:'development',
+  mode: 'development',
   entry: './src/index.js',
   output: {
     filename: 'bundle.js',
@@ -8,22 +7,22 @@ export default {
   devServer: {
     static: {
       directory: 'dist',
-   },
+    },
     compress: true,
     port: 9000,
   },
-  module:{
-    rules:[
+  module: {
+    rules: [
       {
-      test: /\.jsx?$/,
-      use: [
-        { loader: 'babel-loader' },
-      ]
+        test: /\.jsx?$/,
+        use: [
+          { loader: 'babel-loader' },
+        ],
       },
       {
         test: /.(png|jpg|gif|svg|mp3)$/,
-        use: [{ loader: 'file-loader'}],
-      }
-    ]
-  }
+        use: [{ loader: 'file-loader' }],
+      },
+    ],
+  },
 }
