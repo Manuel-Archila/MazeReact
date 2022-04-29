@@ -1,4 +1,4 @@
-import { React, useEffect, useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import PropTypes from 'prop-types'
 import arriba from '../assets/Arriba.gif'
 import abajo from '../assets/Abajo.gif'

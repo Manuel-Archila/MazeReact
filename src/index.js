@@ -1,5 +1,5 @@
 // eslint-disable-next-line object-curly-newline
-import { React, useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { createRoot } from 'react-dom/client'
 import Inicio from './Inicio.js'
 import Laberinto from './Laberinto.js'
@@ -22,12 +22,6 @@ const App = () => {
     song.current.play()
     song.current.loop = true
     song.current.volume = 0.20
-
-    if (terminado.current === true) {
-      setTimeout(() => {
-        setMostrar(true)
-      }, 3000)
-    }
   }, [])
 
   const cambio = () => {
